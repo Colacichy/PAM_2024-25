@@ -3,23 +3,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_zad1">
+    app:startDestination="@id/nav_zad1">
 
+    <fragment
+        android:id="@+id/nav_zad4"
+        android:name="com.example.pam_drawer_app.ui.zad4.nav_zad4"
+        android:label="@string/zad4"
+        tools:layout="@layout/fragment_nav_zad4" />
+    <fragment
+        android:id="@+id/nav_zad6"
+        android:name="com.example.pam_drawer_app.ui.zad6.nav_zad6"
+        android:label="@string/zad6"
+        tools:layout="@layout/fragment_nav_zad6" />
+    <fragment
+        android:id="@+id/nav_zad7"
+        android:name="com.example.pam_drawer_app.ui.zad7.nav_zad7"
+        android:label="@string/zad7"
+        tools:layout="@layout/fragment_nav_zad7" />
+    <fragment
+        android:id="@+id/nav_zad8"
+        android:name="com.example.pam_drawer_app.ui.zad8.nav_zad8"
+        android:label="@string/zad8"
+        tools:layout="@layout/fragment_nav_zad8" />
+    <fragment
+        android:id="@+id/nav_zad9"
+        android:name="com.example.pam_drawer_app.ui.zad9.nav_zad9"
+        android:label="@string/zad9"
+        tools:layout="@layout/fragment_nav_zad9" />
+    <fragment
+        android:id="@+id/nav_zad10"
+        android:name="com.example.pam_drawer_app.ui.zad10.nav_zad10"
+        android:label="@string/zad10"
+        tools:layout="@layout/fragment_nav_zad10" />
+    <fragment
+        android:id="@+id/nav_zad11"
+        android:name="com.example.pam_drawer_app.ui.zad11.nav_zad11"
+        android:label="@string/zad11"
+        tools:layout="@layout/fragment_nav_zad11" />
+    <fragment
+        android:id="@+id/nav_zad12"
+        android:name="com.example.pam_drawer_app.ui.zad12.nav_zad12"
+        android:label="@string/zad12"
+        tools:layout="@layout/fragment_nav_zad12" />
+    <fragment
+        android:id="@+id/nav_zad13"
+        android:name="com.example.pam_drawer_app.ui.zad13.nav_zad13"
+        android:label="@string/zad13"
+        tools:layout="@layout/fragment_nav_zad13" />
+    <fragment
+        android:id="@+id/nav_zad14"
+        android:name="com.example.pam_drawer_app.ui.zad14.nav_zad14"
+        android:label="@string/zad14"
+        tools:layout="@layout/fragment_nav_zad14" />
+    <fragment
+        android:id="@+id/nav_zad15"
+        android:name="com.example.pam_drawer_app.ui.zad15.nav_zad15"
+        android:label="@string/zad15"
+        tools:layout="@layout/fragment_nav_zad15" />
+    <fragment
+        android:id="@+id/nav_zad16"
+        android:name="com.example.pam_drawer_app.ui.zad16.nav_zad16"
+        android:label="@string/zad16"
+        tools:layout="@layout/fragment_nav_zad16" />
+    <fragment
+        android:id="@+id/nav_zad18"
+        android:name="com.example.pam_drawer_app.ui.zad18.nav_zad18"
+        android:label="@string/zad18"
+        tools:layout="@layout/fragment_nav_zad18" />
+    <fragment
+        android:id="@+id/nav_zad19"
+        android:name="com.example.pam_drawer_app.ui.zad19.nav_zad19"
+        android:label="@string/zad19"
+        tools:layout="@layout/fragment_nav_zad19" />
+    <fragment
+        android:id="@+id/nav_zad20"
+        android:name="com.example.pam_drawer_app.ui.zad20.nav_zad20"
+        android:label="@string/zad20"
+        tools:layout="@layout/fragment_nav_zad20" />
+    <fragment
+        android:id="@+id/nav_zad17"
+        android:name="com.example.pam_drawer_app.ui.zad17.nav_zad17"
+        android:label="@string/zad17"
+        tools:layout="@layout/fragment_nav_zad17" />
+    <fragment
+        android:id="@+id/nav_zad5"
+        android:name="com.example.pam_drawer_app.ui.zad5.nav_zad5"
+        android:label="@string/zad5"
+        tools:layout="@layout/fragment_nav_zad" />
     <fragment
         android:id="@+id/nav_zad1"
-        android:name="com.example.pam_drawer_app.ui.home.HomeFragment"
+        android:name="com.example.pam_drawer_app.ui.zad1.nav_zad1"
         android:label="@string/zad1"
-        tools:layout="@layout/fragment_home" />
-
+        tools:layout="@layout/fragment_nav_zad1" />
     <fragment
         android:id="@+id/nav_zad2"
-        android:name="com.example.pam_drawer_app.ui.gallery.GalleryFragment"
-        android:label="@string/zad1"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:name="com.example.pam_drawer_app.ui.zad2.nav_zad2"
+        android:label="@string/zad2"
+        tools:layout="@layout/fragment_nav_zad2" />
     <fragment
         android:id="@+id/nav_zad3"
-        android:name="com.example.pam_drawer_app.ui.slideshow.SlideshowFragment"
+        android:name="com.example.pam_drawer_app.ui.zad3.nav_zad3"
         android:label="@string/zad3"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_nav_zad3" />
 </navigation>

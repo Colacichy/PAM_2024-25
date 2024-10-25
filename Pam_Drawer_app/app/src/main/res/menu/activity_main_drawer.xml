@@ -16,5 +16,74 @@
             android:id="@+id/nav_zad3"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/zad3" />
+        <item
+            android:id="@+id/nav_zad4"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad4" />
+        <item
+            android:id="@+id/nav_zad5"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad5" />
+        <item
+            android:id="@+id/nav_zad6"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad6" />
+        <item
+            android:id="@+id/nav_zad7"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad7" />
+        <item
+            android:id="@+id/nav_zad8"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad8" />
+        <item
+            android:id="@+id/nav_zad9"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad9" />
+        <item
+            android:id="@+id/nav_zad10"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad10" />
+        <item
+            android:id="@+id/nav_zad11"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad11" />
+        <item
+            android:id="@+id/nav_zad12"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad12" />
+        <item
+            android:id="@+id/nav_zad13"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad13" />
+        <item
+            android:id="@+id/nav_zad14"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad14" />
+        <item
+            android:id="@+id/nav_zad15"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad15" />
+        <item
+            android:id="@+id/nav_zad16"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad16" />
+        <item
+            android:id="@+id/nav_zad17"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad17" />
+        <item
+            android:id="@+id/nav_zad18"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad18" />
+        <item
+            android:id="@+id/nav_zad19"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad19" />
+        <item
+            android:id="@+id/nav_zad20"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/zad20" />
+
     </group>
 </menu>
