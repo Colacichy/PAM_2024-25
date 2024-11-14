@@ -41,7 +41,7 @@ public class nav_zad1 extends Fragment {
             public void onClick(View v) {
                 String text = editText.getText().toString();
                 if(text.length() == 0){
-                        text = "Nie wpisano tekstu";
+                        text = "NIE WPISANO TEKSTU";
                 }
 
                 if(checkBox.isChecked()){
