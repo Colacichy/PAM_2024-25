@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,9 +25,10 @@ public class nav_zad3 extends Fragment {
 
     private ListView listView;
     private TextView textView;
-    private View buttonAdd;
+    private Button buttonAdd;
     private ArrayList<String> itemsList;
     private MyCustomAdapter adapter;
+    private DatabaseHelper databaseHelper;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -38,15 +39,18 @@ public class nav_zad3 extends Fragment {
         textView = view.findViewById(R.id.textView2);
         buttonAdd = view.findViewById(R.id.buttonAdd);
 
+        databaseHelper = new DatabaseHelper(getContext());
         itemsList = new ArrayList<>();
         adapter = new MyCustomAdapter(itemsList);
 
+        itemsList.addAll(databaseHelper.getAllItems());
         listView.setAdapter(adapter);
 
         buttonAdd.setOnClickListener(v -> {
             String text = textView.getText().toString().trim();
             if (!text.isEmpty()) {
                 itemsList.add(text);
+                databaseHelper.addItem(text);
                 adapter.notifyDataSetChanged();
                 textView.setText("");
             } else {
@@ -70,8 +74,8 @@ public class nav_zad3 extends Fragment {
         }
 
         @Override
-        public Object getItem(int item) {
-            return data.get(item);
+        public Object getItem(int position) {
+            return data.get(position);
         }
 
         @Override
@@ -86,12 +90,14 @@ public class nav_zad3 extends Fragment {
             }
 
             TextView itemText = convertView.findViewById(R.id.itemText);
-            ImageView deleteIcon = convertView.findViewById(R.id.deleteIcon);
+            Button deleteIcon = convertView.findViewById(R.id.deleteIcon);
 
             itemText.setText(data.get(position));
 
             deleteIcon.setOnClickListener(v -> {
+                String item = data.get(position);
                 data.remove(position);
+                databaseHelper.deleteItem(item);
                 notifyDataSetChanged();
             });
 
